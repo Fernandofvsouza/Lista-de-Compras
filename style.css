@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
-  --background-primary: #F4F5FB;
-  --background-secondary: #FFFFFF;
-  --color-brand: #CA3884;
-  --color-brand-hover: #A52C6B;
-  --color-danger: #C93847;
-  --content-primary: #080B12;
+  --background-primary: #f4f5fb;
+  --background-secondary: #ffffff;
+  --color-brand: #ca3884;
+  --color-brand-hover: #a52c6b;
+  --color-danger: #c93847;
+  --content-primary: #080b12;
   --content-secondary: #374151;
-  --content-tertiary: #9CA3AF;
-  --border-primary: #D1D5DB;
-  --border-hover: #B9C2D0;
+  --content-tertiary: #9ca3af;
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
 }
 
 body {
-    background-color: var(--background-primary);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  background-color: var(--background-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #header {
@@ -38,9 +38,9 @@ body {
   margin-bottom: 42px;
 }
 
-.logo-header{
-    width: 155px;
-    height: 40px;
+.logo-header {
+  width: 155px;
+  height: 40px;
 }
 
 #container {
@@ -53,14 +53,14 @@ body {
   margin: 32px auto 0 auto;
 }
 
-.mini-container{
-    width: 100%;
+.mini-container {
+  width: 100%;
 }
-.back{
-   width: 57px;
-   height: 16px; 
-   color: var(--color-brand);
-   text-decoration: none;
+.back {
+  width: 57px;
+  height: 16px;
+  color: var(--color-brand);
+  text-decoration: none;
 }
 
 .title {
@@ -126,7 +126,7 @@ body {
 }
 
 .input-checkbox {
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .title-item {
@@ -137,13 +137,14 @@ body {
 }
 
 .icon-delete {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   margin-left: 12px;
   cursor: pointer;
 }
 
 footer {
+  max-width: 627px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -153,6 +154,8 @@ footer {
 
 .text-footer {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
   background: var(--color-danger);
@@ -161,6 +164,12 @@ footer {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.footer-itens {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .button-footer {
