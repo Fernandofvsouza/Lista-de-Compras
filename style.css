@@ -85,6 +85,10 @@ body {
   border: 2px solid var(--border-primary);
 }
 
+.add-item input:focus {
+  border: 2px solid var(--color-brand);
+  outline: none;
+}
 .add-item button {
   height: 44px;
   max-width: 160px;
@@ -115,7 +119,7 @@ body {
   gap: 12px;
 }
 
-#item-list {
+.item-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,6 +131,7 @@ body {
 
 .input-checkbox {
   margin-right: 16px;
+  accent-color: var(--color-brand);
 }
 
 .title-item {
@@ -135,6 +140,8 @@ body {
   font-weight: 500;
   color: var(--content-secondary);
 }
+
+
 
 .icon-delete {
   width: 32px;
@@ -153,7 +160,7 @@ footer {
 }
 
 .text-footer {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -180,3 +187,160 @@ footer {
   font-weight: 700;
   cursor: pointer;
 }
+
+/* ===================== TABLET 490px - 640px ===================== */
+@media (min-width: 490px) and (max-width: 640px) {
+  #container {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+  footer {
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+}
+/* ===================== MOBILE 390px ===================== */
+@media (max-width: 490px) {
+  body {
+    background: #F4F5FB;
+    min-height: 100vh;
+    padding: 0;
+  }
+  #header {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  .logo-header {
+    width: 120px;
+    height: 32px;
+  }
+  #container {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .mini-container {
+    width: 100%;
+    padding: 0;
+  }
+  .back {
+    font-size: 14px;
+    color: #CA3884;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin: 8px 0 32px 0;
+    text-align: left;
+  }
+  .add-item {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    width: 100%;
+    align-items: flex-end;
+  }
+  .add-item input {
+    height: 44px;
+    font-size: 15px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 2px solid #D1D5DB;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .add-item button {
+    height: 44px;
+    font-size: 15px;
+    padding: 0 24px;
+    border-radius: 12px;
+    background: #CA3884;
+    color: #fff;
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .list-container {
+    width: 100%;
+    padding: 0;
+  }
+  #shopping-list {
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+    background: #fff;
+    width: 100%;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  .input-checkbox {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    accent-color: #CA3884;
+  }
+  .title-item {
+    font-size: 15px;
+    flex: 1;
+    word-break: break-word;
+    color: #374151;
+    font-weight: 500;
+  }
+  .icon-delete {
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  footer {
+    max-width: 390px;
+    margin-top: 24px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .text-footer {
+    font-size: 15px;
+    padding: 10px 16px;
+    gap: 6px;
+    border-radius: 12px;
+    background: #C93847;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-itens img {
+    width: 18px;
+    height: 18px;
+  }
+  .button-footer {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+
+
+
