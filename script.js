@@ -3,7 +3,7 @@ let listItem = [];
 const inputItem = document.getElementById('add-item');
 const buttonAdd = document.getElementById('add-new-item');
 const ulList = document.getElementById('shopping-list');
-const checkbox = document.getElementById('checkbox').value;
+const checkbox = document.getElementById('checkbox');
 const textInfo = document.getElementById('text-footer');
 const btnDelete = document.getElementById('icon-delete');
 //Event Listeners
@@ -22,13 +22,21 @@ ulList.addEventListener('click', (event) => {
 //Functions
 function addItem(){
     let item = inputItem.value.trim();
+
+    if(localStorage.getItem('listItem')){
+        listItem = JSON.parse(localStorage.getItem('listItem'));
+    }
+
     if(item == ''){
         alert('Por favor digite um item');
         return;
     }
     else{
+        
         listItem.push(item);
+        localStorage.setItem('listItem', JSON.stringify(listItem));
         createItem(item);
+        console.log(listItem);
 
     }
 }
